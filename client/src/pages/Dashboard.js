@@ -4,10 +4,13 @@ import Footer from "../components/Footer"
 
 export default function Dashboard()
 {
+    const f = new FloatingWidget()
+    //f.setRender()
+    //f.handleShow()
     return (
         <div className="container">
             <Nav/>
-            <FloatingWidget/>
+            {f.render()}
             <Footer/>
         </div>
     );

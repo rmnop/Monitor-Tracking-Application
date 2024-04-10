@@ -1,8 +1,9 @@
 import '../styles/Dashboard.css'
 
-export default function AddTaskButton({showAddTaskWidget, taskList}) {
+export default function AddTaskButton({taskListWidget, newTaskWidget}) {
     const addTask = (e) => {
-        showAddTaskWidget=true
+        taskListWidget.handleHide()
+        newTaskWidget.handleShow()
     }
 
     return (

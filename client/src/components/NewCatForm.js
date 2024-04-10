@@ -1,13 +1,12 @@
 import '../styles/Dashboard.css'
 
 export default function NewCatForm({catList, showAddCatWidget}) {
-    options = []
 
     const addCat = (e) => {
         e.preventDefault()
         const formData = new FormData(e.target)
         const formProps = Object.fromEntries(formData)
-        taskList.push({catName: formProps.catName, catPriority: formProps.taskCat})
+        catList.push({catName: formProps.catName, catPriority: formProps.taskCat})
         showAddCatWidget = false
     }
 
